@@ -8,34 +8,19 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        Curso curso1 = new Curso();
-        curso1.setTitulo("Curso java");
-        curso1.setDescricao("Descrição do curso java");
-        curso1.setCargaHoraria(8);
+        Curso curso1 = new Curso("Curso java", "Descrição do curso java", 8);
 
-        Curso curso2 = new Curso();
-        curso2.setTitulo("Curso js");
-        curso2.setDescricao("Descrição do curso js");
-        curso2.setCargaHoraria(4);
+        Curso curso2 = new Curso("Curso js", "Descrição do curso js", 4);
 
-        Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("Mentoria java");
-        mentoria.setDescricao("Descrição da mentoria");
+        Mentoria mentoria = new Mentoria("Mentoria java", "Descrição da mentoria");
         mentoria.setData(LocalDate.now());
 
-//        System.out.println(curso1);
-//        System.out.println(curso2);
-//        System.out.println(mentoria);
-
-        Bootcamp bootcamp = new Bootcamp();
-        bootcamp.setNome("Bootcamp Java Developer");
-        bootcamp.setDescricao("Descrição do bootcamp");
+        Bootcamp bootcamp = new Bootcamp("Bootcamp Java Developer", "Descrição do bootcamp");
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
+        Dev devCamila = new Dev("Camila");
         devCamila.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos Camila: " + devCamila.getConteudosInscritos());
         System.out.println("...");
@@ -47,8 +32,7 @@ public class Main {
 
         System.out.println("-----------------------------------------------------------------------------------------");
 
-        Dev devAlex = new Dev();
-        devAlex.setNome("Alex");
+        Dev devAlex = new Dev("Alex");
         devAlex.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos Alex: " + devAlex.getConteudosInscritos());
         System.out.println("...");
