@@ -1,4 +1,4 @@
-# :computer: Abstraindo um Bootcamp Usando Orientação a Objetos em Java 
+# :computer: Abstraindo um Bootcamp Usando OO em Java 
 
 Desafio realizado durante bootcamp da Digital Innovation One - instrutora **Camila Cavalcante**.
 Durante o projeto, foi explorado os 4 pilares da OO: abstração, encapsulamento, herança e polimorfismo. 
